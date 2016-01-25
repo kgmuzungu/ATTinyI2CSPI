@@ -48,3 +48,5 @@ The ATTiny has no I2C hardware. Therefore we will use LiquidCrystal_SI2C.h, the 
 
 Get the SPI communication to the MAX31855 working:
 The ATTiny has no SPI hardware either but it has an USI. In Adafruit_MAX31855.cpp include tinySPI.h instead of SPI.h or you delete all hardwareSPI related code. I actually only used the softwareSPI in Adafruit_MAX31855 and that worked like a treat. 
+
+To get the I2C address of your expander use https://github.com/MartyMacGyver/Arduino_I2C_Scanner/blob/master/I2C_Scanner/I2C_Scanner.ino
