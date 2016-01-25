@@ -18,12 +18,12 @@ Great thanks for the fantastic libraries I could use:
 
 Wiring: the pin numbers outside the box are the IDE pin numbers. Inside the box are the physical pin numbers. 
 						         ATTiny85
-						 			   +-----+
-						RESET -5-|1   8|--- Vcc
-..to			{	SCL   -3-|2   7|-2- CLK = CLOCK_PIN }
-PCF8574		{	SDA   -4-|3   6|-1- CS	= LATCH_PIN	} ..to Adafruit MAX31855
-						GND   ---|4   5|-0- DO	= DATA_PIN  }
-						         +-----+
+		           +-----+
+		  RESET -5-|1   8|--- Vcc
+..to		{ SCL   -3-|2   7|-2- CLK = CLOCK_PIN 		}
+PCF8574		{ SDA   -4-|3   6|-1- CS	= LATCH_PIN	} ..to Adafruit MAX31855
+		  GND   ---|4   5|-0- DO	= DATA_PIN  	}
+			   +-----+
 
 
 Setting up the Arduino IDE:
@@ -32,9 +32,9 @@ http://highlowtech.org/?p=1695
 http://highlowtech.org/?p=1706
 
 Then go to 
-tools --> board			-->ATTiny
-tools --> processor	-->ATTiny85
-tools --> clock			-->8MHz(internal)
+tools --> board	-->ATTiny
+tools --> processor-->ATTiny85
+tools --> clock	-->8MHz(internal)
 tools --> programmer-->Arduino as ISP
 If you have a vergin ATTiny85 you have to burn the bootloader first.
 
