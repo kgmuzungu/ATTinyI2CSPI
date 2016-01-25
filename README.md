@@ -16,8 +16,10 @@ Great thanks for the fantastic libraries I could use:
 - optional: by J Christensen: TinySPI https://github.com/JChristensen/tinySPI
 - by Limor Fried/Ladyada: Adafruit_MAX31855 (modified) https://github.com/adafruit/Adafruit-MAX31855-library
 
-Wiring: the pin numbers outside the box are the IDE pin numbers. Inside the box are the physical pin numbers. 
-```			  ATTiny85
+Wiring:  
+``` 
+the pin numbers outside the box are the IDE pin numbers. Inside the box are the chip pin numbers.
+                         ATTiny85
                          +-----+
                 RESET -5-|1   8|--- Vcc
 ..to	      { SCL   -3-|2   7|-2- CLK = CLOCK_PIN }
