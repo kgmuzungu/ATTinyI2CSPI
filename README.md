@@ -47,6 +47,6 @@ Get the display working using NewLiquidCrystal:
 The ATTiny has no I2C hardware. Therefore we will use LiquidCrystal_SI2C.h, the SoftwareI2C. Copy the unpacked NewLiquidCrystal into %USER%\Documents\Arduino\libraries\NewliquidCrystal. But there is a catch. To get it all compiled you have to delete LiquidCrystal_I2C* and some other files, because all C files in the ...\libraries\ folder will be compiled. With the Arduino IDE set to board --> ATTiny some values are passed to the compiler that select the right constants/register settings in Arduino.h If you leave the LiquidCrystal_I2C in the ...\libraries\ folder you will get an error because it tries to incorporate Wire.h . ATTiny doesnt have the registers used by that library. 
 
 Get the SPI communication to the MAX31855 working:
-The ATTiny has no SPI hardware either but it has an USI. In Adafruit_MAX31855.cpp include tinySPI.h instead of SPI.h or you delete all hardwareSPI related code. I actually only used the softwareSPI in Adafruit_MAX31855 and that worked like a treat. 
+The ATTiny has no SPI hardware either but it has an USI. In Adafruit_MAX31855.cpp include tinySPI.h instead of SPI.h or you delete all hardwareSPI related code. I actually only used the softwareSPI in Adafruit_MAX31855 and that worked like a treat. Adafruit_MAX31855.cpp and Adafruit_MAX31855.h you can put in the same directory as your ATTinyThermoAndLCD.ino sketch.
 
 To get the I2C address of your expander use https://github.com/MartyMacGyver/Arduino_I2C_Scanner/blob/master/I2C_Scanner/I2C_Scanner.ino
