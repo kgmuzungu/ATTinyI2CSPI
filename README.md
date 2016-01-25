@@ -20,9 +20,9 @@ Wiring: the pin numbers outside the box are the IDE pin numbers. Inside the box 
 ```			  ATTiny85
                          +-----+
                 RESET -5-|1   8|--- Vcc
-..to	      { SCL   -3-|2   7|-2- CLK = CLOCK_PIN 		}
+..to	      { SCL   -3-|2   7|-2- CLK = CLOCK_PIN }
 PCF8574	      { SDA   -4-|3   6|-1- CS	= LATCH_PIN	} ..to Adafruit MAX31855
-                GND   ---|4   5|-0- DO	= DATA_PIN  	}
+                GND   ---|4   5|-0- DO	= DATA_PIN  }
                          +-----+
 ```			   
 
