@@ -11,10 +11,9 @@ String tempStr,chipTempStr;
 
 // what PINs are used for I2C communication are set in ...\NewLiquidCrystal\SI2CIO.cpp 
 // class instantiated but not initialised
+// 0x3F is the I2C address of my PCF8574
 LiquidCrystal_SI2C  lcd(0x3F,2,1,0,4,5,6,7, 3, POSITIVE);
 
-//would use a hardwareSPI... using some USI stuff?
-//Adafruit_MAX31855 thermocouple(LATCH_PIN);
 //uses a software SPI solution
 //Adafruit_MAX31855(int8_t SCLK, int8_t CS, int8_t MISO)
 Adafruit_MAX31855 thermocouple(CLOCK_PIN, LATCH_PIN, DATA_PIN);
