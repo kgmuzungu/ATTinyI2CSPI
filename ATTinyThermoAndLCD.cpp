@@ -9,7 +9,7 @@ const int8_t DATA_PIN  = 1;           //data in
 const int8_t CLOCK_PIN = 2;           //shift register clock
 String tempStr,chipTempStr;
 
-// what PINs are set in ...\NewLiquidCrystal\SI2CIO.cpp 
+// what PINs are used for I2C communication are set in ...\NewLiquidCrystal\SI2CIO.cpp 
 // class instantiated but not initialised
 LiquidCrystal_SI2C  lcd(0x3F,2,1,0,4,5,6,7, 3, POSITIVE);
 
